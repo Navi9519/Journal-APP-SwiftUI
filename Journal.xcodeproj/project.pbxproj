@@ -11,6 +11,10 @@
 		96BE51C92CA3F2C700F54B56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE51C82CA3F2C700F54B56 /* ContentView.swift */; };
 		96BE51CB2CA3F2C800F54B56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BE51CA2CA3F2C800F54B56 /* Assets.xcassets */; };
 		96BE51CE2CA3F2C800F54B56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96BE51CD2CA3F2C800F54B56 /* Preview Assets.xcassets */; };
+		96BE51D52CA3F2D900F54B56 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE51D42CA3F2D900F54B56 /* Journal.swift */; };
+		96BE51D72CA3F2FA00F54B56 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE51D62CA3F2FA00F54B56 /* JournalEntry.swift */; };
+		96BE51DC2CA46C9900F54B56 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE51DB2CA46C9900F54B56 /* PopUpView.swift */; };
+		96BE51DF2CA46CBC00F54B56 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BE51DE2CA46CBC00F54B56 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		96BE51C82CA3F2C700F54B56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		96BE51CA2CA3F2C800F54B56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96BE51CD2CA3F2C800F54B56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96BE51D42CA3F2D900F54B56 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		96BE51D62CA3F2FA00F54B56 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		96BE51DB2CA46C9900F54B56 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		96BE51DE2CA46CBC00F54B56 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				96BE51C62CA3F2C700F54B56 /* JournalApp.swift */,
-				96BE51C82CA3F2C700F54B56 /* ContentView.swift */,
+				96BE51D82CA4541C00F54B56 /* Model */,
+				96BE51D92CA4566100F54B56 /* ViewModel */,
+				96BE51DA2CA4566A00F54B56 /* View */,
 				96BE51CA2CA3F2C800F54B56 /* Assets.xcassets */,
 				96BE51CC2CA3F2C800F54B56 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				96BE51CD2CA3F2C800F54B56 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96BE51D82CA4541C00F54B56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96BE51D62CA3F2FA00F54B56 /* JournalEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96BE51D92CA4566100F54B56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96BE51D42CA3F2D900F54B56 /* Journal.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96BE51DA2CA4566A00F54B56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96BE51C82CA3F2C700F54B56 /* ContentView.swift */,
+				96BE51DB2CA46C9900F54B56 /* PopUpView.swift */,
+				96BE51DE2CA46CBC00F54B56 /* ListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BE51DC2CA46C9900F54B56 /* PopUpView.swift in Sources */,
 				96BE51C92CA3F2C700F54B56 /* ContentView.swift in Sources */,
+				96BE51DF2CA46CBC00F54B56 /* ListView.swift in Sources */,
 				96BE51C72CA3F2C700F54B56 /* JournalApp.swift in Sources */,
+				96BE51D72CA3F2FA00F54B56 /* JournalEntry.swift in Sources */,
+				96BE51D52CA3F2D900F54B56 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
